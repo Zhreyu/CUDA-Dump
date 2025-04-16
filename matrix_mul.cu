@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <cuda.h>
 
+
 #define CHECK(err) \
     if (err != cudaSuccess) { \
         fprintf(stderr, "CUDA Error: %s (err_num=%d)\n", cudaGetErrorString(err), err); \
