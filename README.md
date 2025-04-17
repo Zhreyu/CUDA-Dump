@@ -1,2 +1,2 @@
 # CUDA
-Cpp --> Cuda --> infra  
+
