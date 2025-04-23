@@ -72,11 +72,11 @@ __device__ int julia(int x, int y){ //CPU function
     float jy = scale * (float)(DIM/2 - y) / (float)(DIM/2);
 
     struct Complex c, a, r1, r2;
-    c.r = -0.12; c.i = 0.73;
+    c.r = -0.07; c.i = 0.69;
     a.r = jx; a.i = jy;
     int i = 0;
 
-    for(i = 0; i < 200; i++){
+    for(i = 0; i < 500; i++){
         mul(a,a,&r1);
         add(r1,c,&r2);
         if (magnitude(r2) > 1000) 
